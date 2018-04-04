@@ -1,7 +1,10 @@
 package com.bonnux.tmall.service;
 import com.bonnux.tmall.pojo.Category;
+import com.bonnux.tmall.util.Page;
 
 import java.util.List;
 public interface CategoryService{
-    List<Category> list();
+    int total();
+    List<Category> list(Page page);
+
 }
