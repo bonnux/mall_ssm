@@ -18,6 +18,7 @@ public class CategoryController {
 
     @RequestMapping("admin_category_list")
     public String list(Model model, Page page){
+
         List<Category> cs= categoryService.list(page);
         int total = categoryService.total();
         page.setTotal(total);
