@@ -53,6 +53,17 @@ function checkInt(id, name){
 	return true;
 }
 
+$(function(){
+
+    $("#addForm").submit(function(){
+        if(!checkEmpty("name","分类名称"))
+            return false;
+        if(!checkEmpty("categoryPic","分类图片"))
+            return false;
+        return true;
+    });
+});
+
 
 $(function(){
 	$("a").click(function(){
